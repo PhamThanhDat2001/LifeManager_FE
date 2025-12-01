@@ -1,6 +1,6 @@
 
 # 🌟 LifeManager Modules
-
+LifeManager là một nền tảng web app quản lý cuộc sống toàn diện, giúp bạn tổ chức, theo dõi và tối ưu mọi khía cạnh trong đời sống cá nhân và công việc
 ---
 
 <details>
@@ -180,15 +180,5 @@
 * AI viết nhật ký / tóm tắt ngày / weekly review
 
 </details>
-
----
-
-💡 **Ghi chú về thứ tự triển khai:**
-
-* **1 → 6:** Core tracking + lưu trữ dữ liệu
-* **7 → 9:** Core workflow, automation, analytics
-* **10 → 13:** Optional / nâng cao
-* **14:** AI-powered, build cuối cùng vì cần dữ liệu từ tất cả module khác
-
 ---
 
