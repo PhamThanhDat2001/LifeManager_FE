@@ -1,23 +1,6 @@
 
 # 🌟 LifeManager Modules
 
-## 📑 Table of Contents
-
-1. [📚 Học tập & Phát triển cá nhân](#1-📚-học-tập--phát-triển-cá-nhân)
-2. [💪 Sức khỏe & Cơ thể](#2-💪-sức-khỏe--cơ-thể)
-3. [🗄️ Sổ tay cuộc sống (Life Vault)](#3-🗄️-sổ-tay-cuộc-sống-life-vault)
-4. [💼 Sự nghiệp & Công việc chuyên nghiệp](#4-💼-sự-nghiệp--công-việc-chuyên-nghiệp)
-5. [🤝 Mối quan hệ & Giao tiếp](#5-🤝-mối-quan-hệ--giao-tiếp)
-6. [📂 File Management](#6-📂-file-management)
-7. [✅ Tasks / Projects / Habits / Goals](#7-✅-tasks--projects--habits--goals-cốt-lõi-lifemanager)
-8. [🗓️ Calendar / Reminders + Automation / Workflow](#8-🗓️-calendar--reminders--automation--workflow)
-9. [📊 Analytics & Dashboard cuộc sống](#9-📊-analytics--dashboard-cuộc-sống)
-10. [🛠️ Workspace cá nhân](#10-🛠️-workspace-cá-nhân)
-11. [💳 Subscriptions & định kỳ](#11-💳-subscriptions--định-kỳ)
-12. [🏠 Nhà cửa & Đời sống](#12-🏠-nhà-cửa--đời-sống)
-13. [✈️ Du lịch & Trải nghiệm](#13-✈️-du-lịch--trải-nghiệm)
-14. [🤖 AI-powered Life Assistant](#14-🤖-ai-powered-life-assistant)
-
 ---
 
 <details>
