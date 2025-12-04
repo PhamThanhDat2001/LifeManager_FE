@@ -2,7 +2,7 @@
 # 🌟 LifeManager Modules
 LifeManager là một nền tảng web app quản lý cuộc sống toàn diện, giúp bạn tổ chức, theo dõi và tối ưu mọi khía cạnh trong đời sống cá nhân và công việc
 ---
-
+1
 <details>
 <summary>📚 1. Học tập & Phát triển cá nhân</summary>
 
