@@ -3,7 +3,7 @@
 LifeManager là một nền tảng web app quản lý cuộc sống toàn diện, giúp bạn tổ chức, theo dõi và tối ưu mọi khía cạnh trong đời sống cá nhân và công việc
 ---
 
-<details>
+<details>a
 <summary>📚 1. Học tập & Phát triển cá nhân</summary>a
 
 * Danh sách kỹ năng đang học
