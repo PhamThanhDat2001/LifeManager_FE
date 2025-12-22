@@ -1,301 +1,184 @@
-Welcome to your new TanStack app! 
 
-# Getting Started
+# 🌟 LifeManager Modules
+LifeManager là một nền tảng web app quản lý cuộc sống toàn diện, giúp bạn tổ chức, theo dõi và tối ưu mọi khía cạnh trong đời sống cá nhân và công việc
+---
 
-To run this application:
+<details>a
+<summary>📚 1. Học tập & Phát triển cá nhân</summary>a
 
-```bash
-pnpm install
-pnpm start
-```
+* Danh sách kỹ năng đang học
+* Kế hoạch học tập dài hạn
+* Danh sách khóa học
+* Theo dõi tiến độ đọc sách (reading tracker)
+* Lưu trữ highlights / bài học rút ra
 
-# Building For Production
+</details>
 
-To build this application for production:
+<details>
+<summary>💪 2. Sức khỏe & Cơ thể</summary>
 
-```bash
-pnpm build
-```
+* Theo dõi sức khỏe (cân nặng, nhịp tim, steps)
+* Theo dõi giấc ngủ
+* Theo dõi mood/cảm xúc
+* Theo dõi ăn uống, calories, nước
+* Nhắc uống thuốc / supplements
 
-## Testing
+</details>
 
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
+<details>
+<summary>🗄️ 3. Sổ tay cuộc sống (Life Vault)</summary>
 
-```bash
-pnpm test
-```
+* Lưu các tài liệu quan trọng:
 
-## Styling
+  * CMND, căn cước, bảo hiểm
+  * Hợp đồng, giấy tờ
+* Track ngày hết hạn tài liệu: giấy phép lái xe, passport
 
-This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
+</details>
 
+<details>
+<summary>💼 4. Sự nghiệp & Công việc chuyên nghiệp</summary>
 
-## Linting & Formatting
+* Career roadmap
+* Tracking achievements / KPIs
+* Networking Tracker
+* Portfolio projects
+* Meeting notes & follow-ups
 
+</details>
 
-This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
+<details>
+<summary>🤝 5. Mối quan hệ & Giao tiếp</summary>
 
-```bash
-pnpm lint
-pnpm format
-pnpm check
-```
+* Quản lý danh bạ / người quan trọng
+* Nhắc liên lạc định kỳ (call parents, follow-up khách)
+* Theo dõi sinh nhật, ngày kỷ niệm
+* Relationship CRM (dùng cho business cũng được)
 
+</details>
 
+<details>
+<summary>📂 6. File Management</summary>
 
-## Routing
-This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as files in `src/routes`.
+* Lưu file, folder
+* TAG file
+* Search nâng cao
+* Versioning
 
-### Adding A Route
+</details>
 
-To add a new route to your application just add another a new file in the `./src/routes` directory.
+<details>
+<summary>✅ 7. Tasks / Projects / Habits / Goals (cốt lõi LifeManager)</summary>
 
-TanStack will automatically generate the content of the route file for you.
+### 📝 Tasks
 
-Now that you have two routes you can use a `Link` component to navigate between them.
+* Tạo, sửa, xóa task
+* Đặt deadline, priority
+* Thêm checklist, attachments
+* Gắn tags, labels
+* Phân loại theo project hoặc goal
+* Nhắc nhở / notification
+* Giao task cho người khác (sharing / collaboration)
 
-### Adding Links
+### 📁 Projects
 
-To use SPA (Single Page Application) navigation you will need to import the `Link` component from `@tanstack/react-router`.
+* Tạo, sửa, xóa project
+* Gắn task vào project
+* Theo dõi tiến độ (progress bar / % complete)
+* Timeline / Gantt view
+* Đặt milestone / key result
+* Chia sẻ project với người khác
 
-```tsx
-import { Link } from "@tanstack/react-router";
-```
+### 🔄 Habits
 
-Then anywhere in your JSX you can use it like so:
+* Tạo, sửa, xóa habit
+* Lịch trình thói quen (daily / weekly / custom)
+* Tracking streak / completion
+* Reminder nhắc thực hiện habit
+* Ghi chú / đánh giá habit từng ngày
+* Thống kê habit theo tuần / tháng
 
-```tsx
-<Link to="/about">About</Link>
-```
+### 🎯 Goals
 
-This will create a link that will navigate to the `/about` route.
+* Tạo, sửa, xóa mục tiêu dài hạn / ngắn hạn
+* Gắn task / project / habit vào goal
+* Đặt milestone, deadline
+* Theo dõi tiến độ hoàn thành
+* Đánh giá & ghi nhận kết quả
+* Lịch sử goal: completed, failed, ongoing
 
-More information on the `Link` component can be found in the [Link documentation](https://tanstack.com/router/v1/docs/framework/react/api/router/linkComponent).
+</details>
 
-### Using A Layout
+<details>
+<summary>🗓️ 8. Calendar / Reminders + Automation / Workflow</summary>
 
-In the File Based Routing setup the layout is located in `src/routes/__root.tsx`. Anything you add to the root route will appear in all the routes. The route content will appear in the JSX where you use the `<Outlet />` component.
+* Nếu task quá hạn 3 ngày → tăng priority
+* Nếu gần đến hạn bill → tự tạo task thanh toán
+* Nếu hoàn thành habit 30 ngày → đánh dấu milestone
 
-Here is an example layout that includes a header:
+</details>
 
-```tsx
-import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+<details>
+<summary>📊 9. Analytics & Dashboard cuộc sống</summary>
 
-import { Link } from "@tanstack/react-router";
+* Báo cáo thói quen
+* Báo cáo tasks theo tuần
+* Báo cáo tài chính
+* Báo cáo mood
+* Xu hướng (trend lines) → một dashboard "Life Overview" tổng hợp tất cả
 
-export const Route = createRootRoute({
-  component: () => (
-    <>
-      <header>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-        </nav>
-      </header>
-      <Outlet />
-      <TanStackRouterDevtools />
-    </>
-  ),
-})
-```
+</details>
 
-The `<TanStackRouterDevtools />` component is not required so you can remove it if you don't want it in your layout.
+<details>
+<summary>🛠️ 10. Workspace cá nhân</summary>
 
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
+* Wiki cá nhân
+* Templates
+* SOPs
+* Personal knowledge system
 
+</details>
 
-## Data Fetching
+<details>
+<summary>💳 11. Subscriptions & định kỳ</summary>
 
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-const peopleRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/people",
-  loader: async () => {
-    const response = await fetch("https://swapi.dev/api/people");
-    return response.json() as Promise<{
-      results: {
-        name: string;
-      }[];
-    }>;
-  },
-  component: () => {
-    const data = peopleRoute.useLoaderData();
-    return (
-      <ul>
-        {data.results.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ul>
-    );
-  },
-});
-```
+* Quản lý các dịch vụ đăng ký (Netflix, iCloud, Spotify…)
+* Nhắc đến hạn renew
+* Theo dõi chi tiêu định kỳ
+  *(khác với tài chính chung, đây là một module riêng)*
 
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
+</details>
 
-### React-Query
+<details>
+<summary>🏠 12. Nhà cửa & Đời sống</summary>
 
-React-Query is an excellent addition or alternative to route loading and integrating it into you application is a breeze.
+* Home maintenance (lịch bảo trì điều hòa, xe máy…)
+* Cleaning schedule
+* Grocery list / shopping list
+* Inventory (đồ đạc trong nhà)
+* Quản lý thiết bị + ngày bảo hành
 
-First add your dependencies:
+</details>
 
-```bash
-pnpm add @tanstack/react-query @tanstack/react-query-devtools
-```
-
-Next we'll need to create a query client and provider. We recommend putting those in `main.tsx`.
+<details>
+<summary>✈️ 13. Du lịch & Trải nghiệm</summary>
 
-```tsx
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+* Travel planner (lịch trình)
+* Checklists trước khi đi
+* Bucket list (đi đâu/làm gì trước khi chết)
+* Trip budgeting
 
-// ...
+</details>
 
-const queryClient = new QueryClient();
+<details>
+<summary>🤖 14. AI-powered Life Assistant</summary>
 
-// ...
+* Gợi ý lịch tối ưu (AI time blocking)
+* Gợi ý tasks khi tạo mục tiêu
+* Gợi ý thói quen phù hợp
+* AI coach phân tích cuộc sống & đưa insight
+* AI viết nhật ký / tóm tắt ngày / weekly review
 
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement);
+</details>
+---
 
-  root.render(
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  );
-}
-```
-
-You can also add TanStack Query Devtools to the root route (optional).
-
-```tsx
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
-const rootRoute = createRootRoute({
-  component: () => (
-    <>
-      <Outlet />
-      <ReactQueryDevtools buttonPosition="top-right" />
-      <TanStackRouterDevtools />
-    </>
-  ),
-});
-```
-
-Now you can use `useQuery` to fetch your data.
-
-```tsx
-import { useQuery } from "@tanstack/react-query";
-
-import "./App.css";
-
-function App() {
-  const { data } = useQuery({
-    queryKey: ["people"],
-    queryFn: () =>
-      fetch("https://swapi.dev/api/people")
-        .then((res) => res.json())
-        .then((data) => data.results as { name: string }[]),
-    initialData: [],
-  });
-
-  return (
-    <div>
-      <ul>
-        {data.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default App;
-```
-
-You can find out everything you need to know on how to use React-Query in the [React-Query documentation](https://tanstack.com/query/latest/docs/framework/react/overview).
-
-## State Management
-
-Another common requirement for React applications is state management. There are many options for state management in React. TanStack Store provides a great starting point for your project.
-
-First you need to add TanStack Store as a dependency:
-
-```bash
-pnpm add @tanstack/store
-```
-
-Now let's create a simple counter in the `src/App.tsx` file as a demonstration.
-
-```tsx
-import { useStore } from "@tanstack/react-store";
-import { Store } from "@tanstack/store";
-import "./App.css";
-
-const countStore = new Store(0);
-
-function App() {
-  const count = useStore(countStore);
-  return (
-    <div>
-      <button onClick={() => countStore.setState((n) => n + 1)}>
-        Increment - {count}
-      </button>
-    </div>
-  );
-}
-
-export default App;
-```
-
-One of the many nice features of TanStack Store is the ability to derive state from other state. That derived state will update when the base state updates.
-
-Let's check this out by doubling the count using derived state.
-
-```tsx
-import { useStore } from "@tanstack/react-store";
-import { Store, Derived } from "@tanstack/store";
-import "./App.css";
-
-const countStore = new Store(0);
-
-const doubledStore = new Derived({
-  fn: () => countStore.state * 2,
-  deps: [countStore],
-});
-doubledStore.mount();
-
-function App() {
-  const count = useStore(countStore);
-  const doubledCount = useStore(doubledStore);
-
-  return (
-    <div>
-      <button onClick={() => countStore.setState((n) => n + 1)}>
-        Increment - {count}
-      </button>
-      <div>Doubled - {doubledCount}</div>
-    </div>
-  );
-}
-
-export default App;
-```
-
-We use the `Derived` class to create a new store that is derived from another store. The `Derived` class has a `mount` method that will start the derived store updating.
-
-Once we've created the derived store we can use it in the `App` component just like we would any other store using the `useStore` hook.
-
-You can find out everything you need to know on how to use TanStack Store in the [TanStack Store documentation](https://tanstack.com/store/latest).
-
-# Demo files
-
-Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
-
-# Learn More
-
-You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
